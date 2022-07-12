@@ -66,5 +66,5 @@ export const galleryItems = [
 
 
 
-'https://cdn.pixabay.com/photo/2019/05/1ginal:
+'https://cdn.pixabay.
 
