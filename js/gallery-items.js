@@ -64,7 +64,3 @@ export const galleryItems = [
   },
 ];
 
-
-
-'https://cdn.pixabay.
-
