@@ -32,18 +32,18 @@ const gallery = document.querySelector('.gallery');
 gallery.addEventListener('click', onclick);
 
 //Блокування вільної зони DIV
-function onclick(event) {
+  const galleryImg = new SimpleLightbox(".gallery a", {
+    //captionType : "alt",
+    captionsData: "alt",
+   // docClose: false,
+   // close : false,
+    captionDelay: 250,
+    animationSpeed : 200,
+    maxZoom: 5,
+   // disableScroll : false,
     
-    if (event.target.nodeName !== 'IMG') {
-        return;
-    }
-    event.preventDefault();
-      basicLightbox.create(`
-        <img src="${event.target.dataset.source}" width="800" height="600">
-     `).show()
-};
-    
-     
+  });
+      
 
 
  

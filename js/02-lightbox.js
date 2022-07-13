@@ -23,15 +23,19 @@ galleryList.insertAdjacentHTML("afterbegin", galleryMarkup);
 const gallery = document.querySelector('.gallery');
 gallery.addEventListener('click', onclick);
 
-//Блокування вільної зони DIV
-  const galleryImg = new SimpleLightbox(".gallery a", {
-    //captionType : "alt",
-    captionsData: "alt",
-   // docClose: false,
-   // close : false,
-    captionDelay: 250,
-    animationSpeed : 200,
-    maxZoom: 5,
-   // disableScroll : false,
-});
+function onclick(event) {
     
+    if (event.target.nodeName !== 'IMG') {
+        return;
+    }
+    event.preventDefault();
+    const onclick = new SimpleLightbox(".gallery a", {
+        //captionType : "alt",
+        captionsData: "alt",
+        // docClose: false,
+        // close : false,
+        captionDelay: 250,
+        animationSpeed: 200,
+        maxZoom: 5,
+    })
+};
