@@ -49,6 +49,3 @@ function onclick(event) {
 //         captionDelay: 250,
 //         animationSpeed: 200,
 //         maxZoom: 5,
-//     })
-// };
-
