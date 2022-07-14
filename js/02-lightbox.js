@@ -45,5 +45,4 @@ function onclick(event) {
 //         // captionType : "alt",
 //         captionsData: "alt",
 //         // docClose: false,
-//         // close : false,
-//         captionDelay: 250,
+
