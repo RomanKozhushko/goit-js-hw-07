@@ -40,5 +40,3 @@ function onclick(event) {
     })
 };
 
-//     event.preventDefault();
-
