@@ -40,3 +40,15 @@ function onclick(event) {
     })
 };
 
+//     event.preventDefault();
+//     const onclick = new SimpleLightbox(".gallery a", {
+//         // captionType : "alt",
+//         captionsData: "alt",
+//         // docClose: false,
+//         // close : false,
+//         captionDelay: 250,
+//         animationSpeed: 200,
+//         maxZoom: 5,
+//     })
+// };
+
