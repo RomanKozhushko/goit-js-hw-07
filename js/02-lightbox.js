@@ -41,6 +41,6 @@ function onclick(event) {
 };
 
 //     event.preventDefault();
-//     const onclick = new SimpleLightbox(".gallery a", {
+
 
 
