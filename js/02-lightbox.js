@@ -17,7 +17,6 @@ function createGallery(images) {
     </a>`;})
     .join("")
     }
-
     const galleryIcon = new SimpleLightbox(".gallery a", {
             captionsData: "alt",
     // docClose: false,
@@ -26,5 +25,4 @@ function createGallery(images) {
         animationSpeed : 200,
         maxZoom: 5,
     // disableScroll : false,
-    
-  });
+});
