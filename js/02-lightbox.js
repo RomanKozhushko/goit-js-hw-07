@@ -21,8 +21,8 @@ function createGallery(images) {
             captionsData: "alt",
     // docClose: false,
     // close : false,
-        captionDelay: 250,
-        animationSpeed : 200,
-        maxZoom: 5,
+        captionDelay: 450,
+        animationSpeed : 400,
+        maxZoom: 4,
     // disableScroll : false,
 });
