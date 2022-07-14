@@ -32,33 +32,24 @@ const gallery = document.querySelector('.gallery');
 gallery.addEventListener('click', onclick);
 
 //Блокування вільної зони DIV
+
 function onclick(event) {
     
     if (event.target.nodeName !== 'IMG') {
         return;
     }
     event.preventDefault();
-      basicLightbox.create(`
+    const modal =   basicLightbox.create(`
         <img src="${event.target.dataset.source}" width="800" height="600">
      `).show()
+
+
 };
-    
-      
 
 
  
 
 
-
-
-
-//  `<a class="gallery__link" href = "${original}">
-//     <img
-//       class="gallery__image"
-//       src="${preview}"
-//       data-source="${original}"
-//       alt="${description}"
-//     /></a>`;
 
 
 
