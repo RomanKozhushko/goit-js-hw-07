@@ -47,7 +47,3 @@ function onclick(event) {
 //         // docClose: false,
 //         // close : false,
 //         captionDelay: 250,
-//         animationSpeed: 200,
-//         maxZoom: 5,
-//     })
-// };
