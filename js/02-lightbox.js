@@ -44,6 +44,4 @@ function onclick(event) {
 //     const onclick = new SimpleLightbox(".gallery a", {
 //         // captionType : "alt",
 //         captionsData: "alt",
-//         // docClose: false,
-//         // close : false,
-
+//         // docClose: false
