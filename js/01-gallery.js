@@ -28,16 +28,21 @@ const gallery = document.querySelector('.gallery');
 gallery.addEventListener('click', onclick);
 
 function onclick(event) {
-    
-    if (event.target.nodeName !== 'IMG') {
-        return;
+  if (event.target.nodeName !== 'IMG') {
+    return;
+  }
+  event.preventDefault();
+  const modal = basicLightbox.create(`
+            <img src="${event.target.dataset.source}" width="800" height="600">
+        `).show()
+  
+  document.addEventListener("keydown", onEscClick);
+  function onEscClick(event) {
+    if (event.code === "Escape") {
+      modal.close();
+      document.removeEventListener("keydown", onEscClick);
     }
-    event.preventDefault();
-    const modal =   basicLightbox.create(`
-        <img src="${event.target.dataset.source}" width="800" height="600">
-     `).show()
-
-
+  }
 };
 
 
