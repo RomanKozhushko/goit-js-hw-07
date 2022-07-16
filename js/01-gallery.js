@@ -17,10 +17,6 @@ const galleryOfImg = ({ preview, original, description }) =>
   </a>
 </div>`;
 
-
-
-
-
 // Створюємо акумулятор
 const galleryMarkup = galleryItems.reduce((acc, img) => acc + galleryOfImg(img), "");
 //Шукаємо  class = gallery
@@ -30,8 +26,6 @@ galleryList.insertAdjacentHTML("afterbegin", galleryMarkup);
 //Делегування кліків
 const gallery = document.querySelector('.gallery');
 gallery.addEventListener('click', onclick);
-
-//Блокування вільної зони DIV
 
 function onclick(event) {
     
